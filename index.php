@@ -1,7 +1,7 @@
 <?php
 
 	include "secret/app_codes.php";
-	$url = urlencode("http://www.thesmartpuzzle.com/4sq-data-eggs/");
+	$url = urlencode("http://www.thehyra.com/fde/");
 
 ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
@@ -41,7 +41,7 @@
 </head>
 <body>
 
-	<div class="navbar navbar-fixed-top" role="navigation" id="header">
+	<div class="navbar navbar-default navbar-fixed-top" role="navigation" id="header">
 	  <div class="container">
 		<div class="navbar-header">
 		  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -50,7 +50,7 @@
 			<span class="icon-bar"></span>
 			<span class="icon-bar"></span>
 		  </button>
-		  <a class="navbar-brand" href="index.php">(&#x2b2e;&#x2b2f;) 4SQ Data Eggs</span></a>
+		  <a class="navbar-brand" href="index.php">(&#x2b2e;&#x2b2f;) 4SQ Data Eggs</a>
 		</div>
 		<div class="navbar-collapse collapse">
 			  <ul class="nav navbar-nav">

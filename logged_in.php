@@ -1,4 +1,5 @@
 <div id="content" class="container well">
+	<div class="centered-text">
 <?php
 
 	if(!isset($_GET["token"])) {
@@ -9,7 +10,12 @@
 		$token = $_GET["token"];
 	}
 
-	echo "Token is $token";
+	echo "<p>Token is $token</p>";
+	
 
 ?>
+		<div id="buttons" class="btn-group">
+			<a class="btn btn-primary btn-lg lato-bold" role="button" href="./checkins.php?token=<?php echo $token; ?>"><span class="glyphicon glyphicon-cloud-download"></span>&nbsp;&nbsp;Download check-ins</a>
+		</div>
+	</div>
 </div>
