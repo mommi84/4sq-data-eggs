@@ -1,5 +1,5 @@
 <?php
-	
+
 	include "secret/app_codes.php";
 	include "commons.php";
 
@@ -11,5 +11,3 @@
 		include "logged_in.php";
 
 	include "footer.php";
-
-?>

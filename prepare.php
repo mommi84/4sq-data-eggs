@@ -50,7 +50,7 @@ $zip->open($tmp_file, ZipArchive::CREATE);
 $zip->addFromString("index.html", $fgt);
 
 # loop through each file
-foreach (scandir($token) as $file) {
+foreach(scandir($token) as $file) {
 
 	if ($file == '.' || $file == '..' || $file == 'index.html') {
 	    continue;
@@ -73,5 +73,3 @@ header('Content-type: application/zip');
 readfile($tmp_file);
 
 deleteDirectory($token);
-
-?>
