@@ -9,13 +9,21 @@
 	} else {
 		$token = $_GET["token"];
 	}
-
-	echo "<p>Token is $token</p>";
+	
+	if($token == "") {
+		echo "<a class='btn btn-primary btn-lg lato-bold' role='button'
+                                        href='https://foursquare.com/oauth2/authenticate?client_id=$clid&response_type=code&redirect_uri=$url'>";
+	} else {
 	
 
 ?>
+		<p>Logged in successfully!</p>
 		<div id="buttons" class="btn-group">
-			<a class="btn btn-primary btn-lg lato-bold" role="button" href="./checkins.php?token=<?php echo $token; ?>"><span class="glyphicon glyphicon-cloud-download"></span>&nbsp;&nbsp;Download check-ins</a>
+			<a class="btn btn-primary btn-lg lato-bold" role="button" href="./prepare.php?token=<?php echo $token; ?>"><span class="glyphicon glyphicon-cloud-download"></span>&nbsp;&nbsp;Download check-ins as HTML</a>
 		</div>
+<?php
+	}
+?>
+
 	</div>
 </div>
