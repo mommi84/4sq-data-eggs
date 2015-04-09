@@ -35,6 +35,16 @@
 			}
 			$checkin["photos"]["items"] = $photos;
 
+			$checkin['venue']['icon'] = 'assets/default.png';
+			if(count($checkin['venue']['categories'])) {
+				$category = $checkin['venue']['categories'][0];
+				$checkin['venue']['icon'] = 'assets/'.$category['id'].$category['icon']['suffix'];
+				$filename = 'export/'.$checkin['venue']['icon'];
+				if(!is_file($filename)) {
+					saveImage($filename, $category['icon']['prefix'].'bg_32'.$category['icon']['suffix']);
+				}
+			}
+
 			require("export/template_checkin.php");
 		}
 

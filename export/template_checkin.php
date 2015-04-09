@@ -1,5 +1,7 @@
       <li>
-        <div class="category"></div>
+        <div class="category">
+          <img src="<?=$checkin['venue']['icon']?>">
+        </div>
         <div class="details">
 
           <h4><a href="https://foursquare.com/v/<?=$checkin["venue"]["id"]?>" target="_blank"><?=$checkin["venue"]["name"]?></a></h4>

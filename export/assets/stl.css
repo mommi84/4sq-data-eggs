@@ -45,6 +45,12 @@ li {
 li .category, li .details {
   float:left;
 }
+li .category {
+  padding-right:9px;
+}
+li .details {
+  width:750px;
+}
 li h4, li p { margin:0; }
 li h4 {
   font-size: 130%;
@@ -63,13 +69,13 @@ li .photo_outer {
   border:1px solid #e3e3e3;
   background:#fff;
   padding:5px;
+  width:550px;
 }
 li .photo_inner {
   display:block;
   background-position:center;
   background-repeat:no-repeat;
   background-size:cover;
-  width:500px;
   height:200px;
 }
 

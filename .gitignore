@@ -1,2 +1,4 @@
 *~
 secret/
+export/assets/*.png
+!export/assets/default.png
